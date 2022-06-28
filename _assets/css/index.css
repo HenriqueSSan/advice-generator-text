@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+html,
+body,
+input,
+button {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.generator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1.5rem;
+}
+
+.generator__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  border-radius: .5rem;
+  background-color: hsl(217, 19%, 24%);
+}
+
+.generator__title {
+  margin-bottom: 2rem;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+}
+
+.generator__description {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+
+.generator__details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.generator__details::before,
+.generator__details::after {
+  position: absolute;
+  width: 43%;
+  height: 2px;
+  background-color: hsl(217, 19%, 38%);
+  content: '';
+}
+
+.generator__details::after {
+  right: 0;
+}
+
+.generator__details::before {
+  left: 0;
+}
+
+.generator__details-block {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: .45rem;
+}
+
+.generator__details-blocks {
+  width: 6px;
+  height: 50%;
+  border-radius: 12px;
+  background-color: hsl(193, 38%, 86%);
+}
+
+
+
+.generator__button {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 50%;
+  background: hsl(150, 100%, 66%);
+  transition: .5s;
+}
+
+.generator__button:hover{
+  box-shadow: 0 0 32px  hsl(150, 100%, 66%) ;
+}
+
+.generator__button img {
+  width: 24px;
+}
+
+@media screen and (min-width: 1023px) {
+  .generator__description {
+    font-size: 28px;
+    margin-bottom: 2.25rem;
+  }
+
+  .generator__container {
+    width: 500px;
+  }
+}
