@@ -122,6 +122,7 @@ main {
   border-radius: 50%;
   background: hsl(150, 100%, 66%);
   transition: .5s;
+  cursor: pointer;
 }
 
 .generator__button:hover{
